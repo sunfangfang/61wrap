@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type">
+<meta content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<title>网络专属</title>
+<link rel="stylesheet" href="css/reset_s.css">
+<link rel="stylesheet" href="css/share.css">
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	var deviceWidth = document.documentElement.clientWidth;
+	if(deviceWidth > 1080) deviceWidth = 1080;
+	document.documentElement.style.fontSize = deviceWidth / 10.8 + 'px';
+</script>
+
+<script>
+$(function(){
+	$(".checka").click(function(){
+		if($(this).find("input").is(':checked')) {
+			$(this).addClass("checkb");
+		} else {
+			$(this).removeClass("checkb");
+		}
+//		$(this).toggleClass("checkb");
+	});
+	
+	$(".raa").click(function(){
+		$(".raa").removeClass("rab");
+		$(this).addClass("rab");
+		});
+	})
+</script>
+<title>无标题文档</title>
+</head>
+
+<body>
+<div class="bd_share">
+	<div class="bg">
+        <div class="fcon">
+            <div class="fc1">网络专属礼包SUPERKIDS 限时限量</div>
+            <div class="fc2"><img src="img/f1.jpg"></div>
+            <div class="fcc">
+                <div class="fc3" style="margin-top:0.25rem;">咨询电话0592-5193885&nbsp;&nbsp;&nbsp;&nbsp;微信客服号  </div>
+                <div class="fc3"><small>【报名不等于下单，经客服介绍满意后下单，此链接为官方报名链接， 请放心填写！ 】</small></div>
+                <div class="fc4">我想要拍摄的类型<small>*</small></div>
+                <div class="fc7">请填写此项</div>
+                <div class="fc5">
+                    <span><label class="checka"><input type="checkbox" name="CheckboxGroup1" id="CheckboxGroup1_0"><small>孕妈照</small></label></span>
+                    <span><label class="checka"><input type="checkbox" name="CheckboxGroup1" id="CheckboxGroup1_1"><small>新生儿上门拍</small></label></span>
+                    <span><label class="checka"><input type="checkbox" name="CheckboxGroup1" id="CheckboxGroup1_2"><small>百天照</small></label></span>
+                    <span><label class="checka"><input type="checkbox" name="CheckboxGroup1" id="CheckboxGroup1_3"><small>亲子照</small></label></span>
+                    <span><label class="checka"><input type="checkbox" name="CheckboxGroup1" id="CheckboxGroup1_4"><small>全家福</small></label></span>
+                    <span><label class="checka" style="width:2rem;"><input type="checkbox" name="CheckboxGroup1" id="CheckboxGroup1_5"><small>其他</small></label><input type="text" value="" class="fc5_in"></span> 
+                </div>
+                <div class="fc4">请选择获取报价方式<small>*</small></div>
+                <div class="fc7">请填写此项</div>
+                <div class="fc6">
+                    <label class="raa rab"><input type="radio" name="RadioGroup1" id="RadioGroup1_0"><small>电话沟通</small></label>
+                    <label class="raa"><input type="radio" name="RadioGroup1" id="RadioGroup1_1"><small>微信发送</small></label>
+                </div>
+                <div class="fc4">姓名</div>
+                <div class="fc8"><input type="text"></div>
+                <div class="fc4">手机<small>*</small><span>请留下可以联系到您的手机号哦，确保能正常接收短信</span></div>
+                <div class="fc7">请填写此项</div>
+                <div class="fc10"><input type="text"></div>
+                <div class="fc4">微信<span>预留微信号欣赏最新客片（方面给您发送客片预览）</span></div>
+                <div class="fc9"><input type="text"><a href="#">获取信息</a></div>
+                <div class="fc4">店面选择<span>选择距离您较近的店面</span></div>
+                <div class="fc11">
+                	<select>
+                    	<option>高迪别墅店</option>
+                    	<option>漳州店</option>
+                    	<option>瑞景店</option>
+                    	<option>松柏店</option>
+                    	<option>禾祥店</option>
+                    </select>
+                </div>
+                <div class="fc12">此活动仅限网络报名专享</div>
+                <div class="fc13"><input type="submit" value="提交"></div>
+            </div>
+        </div>
+    </div> 
+</div>   
+
+
+
+</body>
+</html>

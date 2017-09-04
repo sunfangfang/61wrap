@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Type">
+		<meta content="text/html; charset=utf-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<title>摇一摇</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+	</head>
+
+	<body>
+		<div class="red_bg">
+			<div class="red-ss-bg">
+				<span class="red-ss"></span>
+			</div>
+			<div class="red-jh">哇塞~能在77亿人里偶遇见你。</div>
+			<div class="red-jh1">
+				一个非常幸运的福袋
+			</div>
+			<div class="row_contain"><img class="shake_sign" src="img/shake_sign.gif" /></div>
+			<div class="red-tc">
+				<!-- 已中奖 -->
+				<div class="red-yzj">
+					<div class="red-jh">Surprise恒心福到~</div>
+					<div class="prize_contain"><img src="img/prize.png" /></div>
+					<div class="red-jh">时光不老，爱不停歇，最好的礼留给最爱的你！</div>
+					<div class="row_contain"><input type="number" placeholder="请输入手机号" class="prize_input" /></div>
+					<div class="row_contain"><span class="get_btn"></span><span class="reshake"></span></div>
+					<div class="row_contain"></div>
+					<div class="row_contain"><span class="shake_tip">谢谢捧场哦 您还有2次摇福袋机会，礼品限领1次。</span></div>
+				</div>
+
+			</div>
+
+			<!--提示弹窗-->
+			<div class="tip_wrap animated">
+				<div class="tip_box">
+					<span class="close">&times;</span>
+					<div class="tip_tit">摇一摇规则</div>
+					<p>2017年7月27日0:00至8月23日24:00期间每个微信号每日有三次机会参与摇一摇活动，参与方式：向好友赠送气球后获得参与机会</p>
+				</div>
+			</div>
+		</div>
+		<!-- End 红包 -->
+		<script type="text/javascript" src="js/red.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".reshake").click(function() {
+					$('.red-ss').removeClass('shake_bag');
+					$(".red-tc").hide();
+				});
+				$(".close").click(function() {
+					$(".tip_wrap").addClass("fadeOutUp");
+				})
+			})
+		</script>
+	</body>
+
+</html>

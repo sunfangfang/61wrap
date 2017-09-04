@@ -1,0 +1,168 @@
+
+*{margin: 0; padding: 0;}
+body{color: #fff; font-size: 14px; font-size: "微软雅黑";}
+
+/*红包*/
+.red_bg{background: rgba(0,0,0,0.96);position: absolute;height: auto;min-height: 100%;width: 100%;overflow: auto;}
+.red_bg>div.red-ts{background: url(../img/red-ts.png); background-repeat: no-repeat; width: 100%; height: 80px; background-size: 200px; background-position: center; margin-top: 5%;}
+.red_bg>div.red-ss-bg{height: 20rem; width: 100%; margin: 20px auto; position: relative;}
+/*.red_bg>div.red-ss-bg::after{content: ' '; width: 101%; height: 101%; position: absolute; top: -0.5%; left: -0.5%; background:url(../img/red-ss-bg.png); background-size: cover;}*/
+.red_bg>div.red-ss-bg>span{background: url(../img/luckyBag.png); width: 100%; height: 100%; position: absolute; background-size: auto 100%; background-position: center; background-repeat: no-repeat; display: inline-block;}
+
+.red_bg>div.red-jh{width: 100%; font-size: 18px;letter-spacing: 2px; height: 40px; line-height: 40px;text-align: center; margin: 0px auto;color: #ffda89;}
+.red_bg>div.red-jh>span{color: #f3f125; padding: 0px 5px;}
+.red-jh1{width: 60%;margin: auto;text-align: right;font-size: 14px; color: #FFDA89;letter-spacing: 2px;margin-top: 5px;}
+.red-jh{width: 100%; font-size: 17px;letter-spacing: 2px; height: 40px; line-height: 40px;text-align: center; margin: 0px auto;color: #ffda89;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+/*提示信息*/
+.red-yzj>.red-jh:first-child{margin-top: 30px;}
+.prize_contain img{width: 100%;height: auto;}
+.red-tc{background: rgba(0,0,0,1); position: absolute; width: 92%;padding: 0px 4%; height: 100%; top: 0; display: none;height: auto;min-height: 100%;overflow: auto;}
+.red-yzj>.red-tc-k,.red-tc-btn{width: calc( 100% - 40px ); padding: 20px; background-repeat: no-repeat;}
+.red-yzj>.red-tc-k{background: url(../img/red-zj-bg.png); background-size: 100%;  margin-top: 40%; text-align: center; font-size: 16px;}
+.red-yzj>.red-tc-k>img{width: 50%; display: block; margin: 0 auto; padding-bottom: 10px;}
+.red-yzj>.red-tc-k>p{font-size: 20px; padding-bottom: 10px;}
+.red-yzj>.red-tc-k>p>span{font-size: 34px; padding: 0px 5px;}
+.red-yzj>.red-tc-btn{ background: url(../img/red-btn-bg.png); background-size: 100%;}
+.red-yzj>.red-tc-btn>button{width: 100%; background: #ff0006; border-radius: 5px; border: none; line-height: 40px; font-size: 18px; color: #fff;}
+
+
+.prize_input{
+	width: 65%;
+	height: 40px;
+	line-height: 40px;
+	margin: auto;
+	border-radius: 6px;
+	padding: 0 20px;
+	font-size: 20px;
+	text-align: center;
+	color: #333;
+}
+.row_contain{
+	width: 100%;
+	text-align: center;
+	margin-top: 25px;
+}
+
+.get_btn{
+	display: inline-block;
+	width: 120px;
+	height: 50px;
+	background: url(../img/get_btn.png);
+	background-size:100%;
+	margin: 0 5px;
+}
+.reshake{
+	display: inline-block;
+	width: 120px;
+	height: 50px;
+	background: url(../img/reshake.png);
+	background-size:100%;
+	margin: 0 5px;
+}
+.shake_tip{
+	font-size: 14px;
+	color: #505050;
+	margin-bottom: 30px;
+}
+
+.red_bg>div.red-ss-bg>span.shake_bag{
+	background: url(../img/luckBag2.gif);	
+	background-size: 100% auto; 
+	background-position: center; 
+	background-repeat: no-repeat;
+}
+.row_contain:last-child{
+	padding-bottom: 30px;
+}
+.tip_wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.6);
+}
+.tip_box{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	width: 90%;
+	background: #dc2f43;
+	border-radius: 6px;
+	padding: 30px;
+	box-sizing: border-box;
+	color: #fceb9c;
+}
+.tip_box p{
+	margin-left: 30px;
+    line-height: 25px;
+}
+.close{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 24px;
+}
+
+.shake_sign{
+	margin-top:-60px;
+}
+
+
+/*提交状态*/
+.modal_wrap{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat top left;
+    background-size: 100% auto;
+}
+.modal_box{
+	width: 92%;
+	margin: auto;
+	background: #FFF;
+	height: auto;
+	box-shadow: 0 0 10px #c4c4c4;
+}
+.modal_tit{
+	width: 100%;
+	height: 80px;
+	color: #19191e;
+	font-size: 18px;
+	background-color: #f4eee2;
+	line-height: 80px;
+	text-align: center;
+}
+.modal_con{
+	padding: 30px;
+}
+.modal_btm{
+	width: 100%;
+	height: 80px;
+	background-color: #f4eee2;
+}
+.modal_txt{
+	width: 100%;
+	margin-top:30px;
+}
+.modal_con img{
+	width: 100%;
+}
+.go_home{
+	width: 100%;
+	height: auto;
+	text-align: right;
+}
+.go_home img{
+	width: 28.5%;
+	margin-right: 10%;
+}
+
+.share{
+	width: 21.8%;
+	height: auto;
+	margin-left: 15%;
+}
